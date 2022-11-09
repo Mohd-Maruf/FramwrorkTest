@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		12DA7A48291C2DE100EEB779 /* MarufTestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 12DA7A47291C2DE100EEB779 /* MarufTestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12DA7A4F291C2F0F00EEB779 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DA7A4E291C2F0F00EEB779 /* ColorConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12DA7A44291C2DE100EEB779 /* MarufTestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarufTestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12DA7A47291C2DE100EEB779 /* MarufTestFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarufTestFramework.h; sourceTree = "<group>"; };
+		12DA7A4E291C2F0F00EEB779 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				12DA7A47291C2DE100EEB779 /* MarufTestFramework.h */,
+				12DA7A4E291C2F0F00EEB779 /* ColorConstants.swift */,
 			);
 			path = MarufTestFramework;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					12DA7A43291C2DE100EEB779 = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12DA7A4F291C2F0F00EEB779 /* ColorConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 		12DA7A4C291C2DE100EEB779 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		12DA7A4D291C2DE100EEB779 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
